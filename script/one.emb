@@ -1,0 +1,26 @@
+_set varThing! str:hello world:
+
+_print varThing!
+
+_set varThing! str:banana:
+
+_print varThing!
+
+_set isEqual! bool:false:
+
+_set func1! [
+    _print str:test:
+    _print str:I am testing:
+]
+
+_set func2! [
+    _print str:hi:
+]
+
+_free isEqual!
+
+_call func1!
+_call func1!
+_call func2!
+
+_print str:_set dsfkjsdf:

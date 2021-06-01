@@ -14,7 +14,7 @@ const scriptLoc = path.join(process.cwd(), process.argv[2]);
     readL.stop();
 
     const lexed = lex(script);
-    for(tok of lexed) console.log(tok);
+    console.dir(lexed, { depth: null });
     execute(lexed);
 
 })();

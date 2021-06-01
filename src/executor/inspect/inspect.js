@@ -1,3 +1,5 @@
+// Makes sure everything is properly written before execution.
+
 const primitives = require("./primitives.js");
 
 module.exports = function(tokens) {

@@ -2,7 +2,7 @@
   "name": "ember-interpreter-js",
   "version": "0.1.0",
   "description": "",
-  "main": "main.js",
+  "main": "./src/main.js",
   "scripts": {
     "test": "node ./src/main.js ./script/one.emb",
     "start": ""

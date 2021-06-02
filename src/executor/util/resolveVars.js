@@ -10,7 +10,7 @@ module.exports = function(vars) {
         if(variable instanceof token.VarToken) {
             const varVal = virtual.memory[variable.name];
             if(varVal) vals.push(varVal);
-            else throw new terminal.Error("Variable does not exist.");
+            else throw new terminal.FatalError(`The variable "${variable.name}" does not exist.`);
         } else {
             vals.push(variable);
         }

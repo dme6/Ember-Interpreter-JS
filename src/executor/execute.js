@@ -5,11 +5,7 @@ const terminal = require("../terminal/terminal.js");
 
 module.exports = function(tokens) {
 
-    try {
-        inspect(tokens)
-    } catch(e) {
-        if(e instanceof terminal.FatalError) return e.display();
-    }
+    inspect(tokens);
 
     for(let i = 0; i < tokens.length; i++) {
         const cur = tokens[i];

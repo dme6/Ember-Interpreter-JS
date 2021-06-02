@@ -12,11 +12,12 @@ module.exports = function(tok, splitted, i, inPrimitive, resetTok, pushTok) {
                 pushTok(new token.PrimitiveToken(tempType, tok.substring(0, tok.length - 1)));
                 tempType = "";
                 inPrimitive(false);
+                resetTok();
             }
         } else if(lconfig.primitives.includes(tok.replace(":", ""))) {
             tempType = tok.replace(":", "");
+            resetTok();
         }
-        resetTok();
         
     }
 }

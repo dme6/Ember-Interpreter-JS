@@ -1,6 +1,6 @@
 module.exports = {
-    // valueToken: require("./valueToken.js"),
+    // primitiveToken: require("./primitiveToken.js"),
     keywordToken: require("./keywordToken.js"),
     // varToken: require("./varToken.js"),
-    // blockToken: require("./blockChar.js")
+    // blockToken: require("./blockToken.js")
 }

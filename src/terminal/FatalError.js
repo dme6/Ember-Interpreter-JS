@@ -3,6 +3,6 @@ module.exports = class {
         this.message = message;
     }
     display() {
-        console.log(`FATAL ERROR: ${this.message}`);
+        console.log(`\x1b[38;5;196mFATAL ERROR: ${this.message}\x1b[0m`);
     }
 }

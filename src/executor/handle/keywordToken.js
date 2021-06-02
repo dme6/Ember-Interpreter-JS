@@ -7,13 +7,8 @@ module.exports = function(i, tokens) {
     switch(tokens[i].name) {
 
         case "print": {
-            try {
-                const params = util.resolveVars(util.getKeywordArguments(1, i, tokens));
-                console.log(params[0].value);
-            } catch(e) {
-                if(e instanceof terminal.Error) e.display();
-            }
-            
+            const params = util.resolveVars(util.getKeywordArguments(1, i, tokens));
+            console.log(params[0].value);
             break;
         }
 
@@ -35,7 +30,7 @@ module.exports = function(i, tokens) {
 
         case "debugMem": {
             console.log("--------------------------------------");
-            console.log("Virtual Memory:")
+            console.log("Virtual Memory")
             console.log("--------------------------------------");
             console.dir(virtual.memory, { depth: null });
             console.log("--------------------------------------");
@@ -43,13 +38,8 @@ module.exports = function(i, tokens) {
         }
         
         case "call": {
-            try {
-                const params = util.resolveVars(util.getKeywordArguments(1, i, tokens));
-                require("../execute.js")(params[0].code);
-            } catch(e) {
-                if(e instanceof terminal.Error) e.display();
-            }
-
+            const params = util.resolveVars(util.getKeywordArguments(1, i, tokens));
+            require("../execute.js")(params[0].code);
             break;
         }
 

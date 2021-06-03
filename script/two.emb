@@ -1,16 +1,1 @@
-_if _eq var1! int:10: [
-    _print str:Yes.:
-]
-
-_print str:Hello there!:
-_print str:Oh yeah!!!:
-
-_set var1! int:10:
-_set var2! str:This is a random string:
-_set var3! bool:false:
-_set var4! flt:18.7:
-
-_print var1!
-_print var3!
-_print varr
-_print str:hello:
+_print str:file two:

@@ -1,5 +1,5 @@
 const tokenize = require("./tokenize/tokenize.js");
-const lconfig = require("./lexer.config.js");
+const lconfig = require("../config.js");
 
 module.exports = function(script) {
     

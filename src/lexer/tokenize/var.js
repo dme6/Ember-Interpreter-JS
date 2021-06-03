@@ -1,5 +1,5 @@
 const token = require("../token/token");
-const lconfig = require("../lexer.config.js");
+const lconfig = require("../../config.js");
 
 module.exports = function(tok, splitted, i, resetTok, pushTok) {
     if(tok.endsWith("!") &&

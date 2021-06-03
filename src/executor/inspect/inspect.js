@@ -1,4 +1,5 @@
-// Makes sure everything is properly written before execution.
+// This checks if the tokens are properly structured
+// and ready for execution.
 
 const primitives = require("./primitives.js");
 

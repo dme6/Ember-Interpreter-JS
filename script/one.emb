@@ -4,3 +4,24 @@ _print thing!
 _print str:hello:::::
 
 _debugMem
+_set sdf! num:28: _set sdff! str:spcity:
+_debugMem
+
+_print str:tset:
+
+_print str:this is a string:
+_set functhing! [
+    _print str:helo:
+    _set functhing2! [
+        _print str:this is functhing 2:
+        _set functhing3! [
+            _print str:this is functhig 3:
+        ]
+        _call functhing3!
+    ]
+    _call functhing2!
+]
+
+_call functhing!;_call functhing3!
+
+_print str:End of the file.:
